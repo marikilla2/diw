@@ -1,41 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicación Web Social</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Aplicación web social</h1>
-        <nav class="menu-hamburguesa">
-            <input type="checkbox" id="toggle-menu">
-            <label for="toggle-menu" class="hamburger-icon">
-                <i class="fa-notdog fa-solid fa-bars"></i>
-            </label>
-            <ul class="nav-links">
-                <a href="#"><i class="fa-solid fa-house"></i></a>
-                <a href="#"><i class="fa-regular fa-calendar"></i></a>
-                <a href="#"><i class="fa-solid fa-cloud"></i></a>
-                <a href="#"><i class="fa-regular fa-face-smile"></i></a>
-                <a href="#"><i class="fa-regular fa-user"></i></a>
-            </ul>
-        </nav>   
-        
+      <nav class="menu-hamburguesa" aria-label="Navegación principal">
+        <input type="checkbox" id="toggle-menu" />
+        <label for="toggle-menu" class="hamburger-icon" title="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <div class="nav-links">
+          <a href="#" aria-label="Inicio"><i class="fa-solid fa-house"></i></a>
+          <a href="#" aria-label="Calendario"
+            ><i class="fa-regular fa-calendar"></i
+          ></a>
+          <a href="#" aria-label="Nube"><i class="fa-solid fa-cloud"></i></a>
+          <a href="#" aria-label="Estado de ánimo"
+            ><i class="fa-regular fa-face-smile"></i
+          ></a>
+          <a href="#" aria-label="Perfil de usuario"
+            ><i class="fa-regular fa-user"></i
+          ></a>
+        </div>
+      </nav>
+
+      <h1>Aplicación web social</h1>
     </header>
 
     <main>
-        <h1>Bienvenido</h1>
-        <p>Este es el contenido principal de la página. El layout usa Flexbox
-           para que el footer siempre se mantenga en la parte inferior.</p>
+      <h2>Bienvenido</h2>
+      <p>
+        Este es el contenido principal de la página. El layout usa Flexbox para
+        que el footer siempre se mantenga en la parte inferior.
+      </p>
     </main>
 
     <footer>
-        <img src="./img/facebook-brands-solid-full.svg" alt="" width="100">
-        <img src="./img/square-x-twitter-brands-solid-full.svg" alt="" width="100">
-        <img src="./img/youtube-brands-solid-full.svg" alt="" width="100">
+      <a href="#" aria-label="Facebook">
+        <img
+          src="./img/facebook-brands-solid-full.svg"
+          alt="Icono de Facebook"
+          width="20"
+          height="20"
+        />
+      </a>
+      <a href="#" aria-label="X / Twitter">
+        <img
+          src="./img/square-x-twitter-brands-solid-full.svg"
+          alt="Icono de X (Twitter)"
+          width="20"
+          height="20"
+        />
+      </a>
+      <a href="#" aria-label="YouTube">
+        <img
+          src="./img/youtube-brands-solid-full.svg"
+          alt="Icono de YouTube"
+          width="20"
+          height="20"
+        />
+      </a>
     </footer>
-</body>
+  </body>
 </html>
